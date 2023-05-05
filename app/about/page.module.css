@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    place-content: center;
+    height: 83vh;
+}
+
+.container .description {
+    max-width: 1200px;
+    background-color: white;
+    padding: 40px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 70vh;
+
+}
+
+.container .description .descriptionContainer {
+    width: 40%;
+    font-size: 19px;
+}
+
+.container .description .aboutImageContainer {
+    width: 45%;
+    height: 100%;
+}
