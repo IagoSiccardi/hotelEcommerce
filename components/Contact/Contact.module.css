@@ -1,0 +1,163 @@
+.form {
+    display: grid;
+    gap: 10px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+    justify-items: center;
+    width: 450px;
+    position: relative;
+}
+
+.form .inputContainer{
+    width: 350px;
+}
+
+.form .inputContainer .spanContainer {
+    position: relative;
+}
+
+
+.form .inputContainer input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid black;
+    outline: none;
+    position: relative;
+    font-size: 18px;
+    transition: .5s ease;
+}
+
+.form .inputContainer input:focus {
+    border: 2px solid rgb(0, 140, 255);
+}
+
+
+.form .inputContainer .spanContainer span {
+    position: absolute;
+    pointer-events: none;
+    background-color: white;
+    font-weight: bold;
+    transition: .2s ease;
+    padding: 0px 2px;
+
+}
+
+
+.form .inputContainer .spanContainer .wtoFocus {
+    top: calc(50% - 8px);
+    left: 15px;
+    color: rgba(0, 0, 0, 0.507);
+
+}
+
+.wtFocus {
+    top: -25px;
+    left: 15px;
+    color: rgb(0, 140, 255);
+    font-weight: bold;
+
+}
+
+.form .textAreaContainer{
+    width: 350px;
+    
+}
+
+.form .textAreaContainer .span2Container {
+    position: relative;
+}
+
+.form .textAreaContainer .span2Container textarea {
+    resize: none;
+    font-size: 18px;
+    font-family: Roboto;
+    padding: 15px;
+    border: 2px solid black ;
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+    transition: .5s ease;
+
+}
+
+.form .textAreaContainer .span2Container textarea:focus {
+    border: solid 2px rgb(0, 140, 255)
+}
+
+.form .textAreaContainer .span2Container span {
+    position: absolute;
+    pointer-events: none;
+    background-color: white;
+    font-weight: bold;
+    transition: .2s ease;
+    padding: 0px 2px;
+}
+
+.form .textAreaContainer .span2Container .wtoFocus {
+    top: -45px;
+    left: 15px;
+    color: rgba(0, 0, 0, 0.507);
+
+}
+
+.form .textAreaContainer .span2Container .wtFocus {
+    top: -70px;
+    left: 15px;
+    color: rgb(0, 140, 255);
+    font-weight: bold;
+
+}
+
+.form .formButton {
+    color: white;
+    background-color: rgb(0, 140, 255);
+    border: 2px solid transparent;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+    width: 150px;
+}
+
+.form .formButton:hover {
+    background-color: white;
+    color: rgb(0, 140, 255);
+    border: 2px solid rgb(0, 140, 255);
+}
+
+.form .formButton:active {
+    transform: scale(1.05);
+    
+}
+
+.popUp {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    background-color: white;
+    top: 100px;
+    left: calc(50% - 100px);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.popUp span {
+    font-weight: bold;
+    color: rgb(0, 140, 255);
+}
+
+.popUp p {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}

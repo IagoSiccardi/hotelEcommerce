@@ -1,0 +1,32 @@
+.descriptionArticle {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.116) 0px 5px 15px;
+}
+
+.descriptionArticle .imgContainer {
+    height: 40vh;
+    width: 60vh;
+    user-select: none;
+}
+
+.descriptionArticle .imgContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.descriptionArticle .description {
+    width: 40vh;
+    font-size: 15px;
+}
+
+.descriptionArticle .description::selection {
+    
+    background-color: rgba(0, 0, 0, 0.103);
+
+}

@@ -1,0 +1,23 @@
+.wppContainer {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color:#25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: .5s ease;
+}
+
+.wppContainer:hover {
+    transform: scale(1.1);
+}
+
+
+.wppContainer svg {
+    color: white;
+}

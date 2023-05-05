@@ -1,0 +1,47 @@
+.footer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    height: 100px;
+}
+
+.footer .ecommerce {
+    position: absolute;
+    left: 20px;
+    color: rgb(0, 140, 255);
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Sulphur Point', sans-serif;
+    text-transform: uppercase;
+    transition: .5s ease;
+}
+
+.footer .ecommerce:hover {
+    transform: scale(1.05);
+}
+
+.footer .icons {
+    font-size: 2.5rem;
+    color: rgb(0, 140, 255);
+    display: flex;
+    gap: 5px;    
+}
+
+.footer .icons svg {
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.footer .icons svg:hover {
+    transform: scale(1.05);
+}
+
+.footer .copy {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 13px;
+}
