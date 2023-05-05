@@ -3,6 +3,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .imagesSection .mainImage {
