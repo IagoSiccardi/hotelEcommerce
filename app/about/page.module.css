@@ -1,7 +1,7 @@
 .container {
     display: grid;
     place-content: center;
-    height: 83vh;
+    height: auto;
 }
 
 .container .description {
@@ -10,17 +10,57 @@
     padding: 40px 0px;
     border-radius: 20px;
     display: flex;
-    justify-content: space-evenly;
-    height: 70vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
 
 }
 
 .container .description .descriptionContainer {
-    width: 40%;
-    font-size: 19px;
+    width: 90%;
+    font-size: 16px;
+    margin-top: 60px;
 }
 
 .container .description .aboutImageContainer {
-    width: 45%;
+    width: 90%;
     height: 100%;
+}
+
+@media (min-width:748px) {
+
+    .container {
+        height: 84vh;
+    }
+
+    .container .description {
+        display: flex;
+        justify-content: space-evenly;
+        height: 70vh;
+        flex-direction: row;
+
+
+    }
+
+    .container .description .descriptionContainer {
+        display: flex;
+        align-items: flex-start;
+        width: 40%;
+        font-size: 16px;
+        margin-top: 0px;
+        height: 100%;
+
+    }
+
+    .container .description .aboutImageContainer {
+        width: 45%;
+        height: 100%;
+    }
+}
+
+@media (min-width:1080px) {
+    .container .description .descriptionContainer {
+        font-size: 18px;
+    
+    }
 }
