@@ -1,5 +1,5 @@
 .card {
-    width: 400px;
+    width: 90%;
     height: 350px;
     border-radius: 30px;
     overflow: hidden;
@@ -47,3 +47,32 @@
 }
 
 
+@media (min-width: 500px) {
+    .card {
+        height: 30rem;
+    }
+    
+}
+
+@media (min-width: 748px) {
+    .card {
+        width: 33%;
+        height: 350px;
+    }
+
+    .card .container p {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (min-width: 1080px) {
+    .card {
+        width: 400px;
+        height: 350px;
+    }
+
+    .card .container p {
+        font-size: 2rem;
+    }
+}

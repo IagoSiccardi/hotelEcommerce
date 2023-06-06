@@ -14,13 +14,13 @@
 .descriptionContainer .description {
     max-width: 1200px;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     font-family: system-ui;
     z-index: 0;
-
-
 }
+
+
 
 .descriptionContainer .description::selection {
     
@@ -51,4 +51,10 @@
     color: white;
     border: white 2px solid;
     transform: scale(1.005);
+}
+
+@media (min-width: 748px) {
+    .descriptionContainer .description {
+        font-size: 22px;
+    }
 }

@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
+  flex-direction: column;
 
 }
 
@@ -28,4 +29,35 @@
   justify-content: center;
   gap: 15px;
   margin: 40px 0px;
+  flex-wrap: wrap;
+
+}
+
+@media (min-width: 500px) {
+  .servicesSection {
+    width: 500px;
+  }
+  
+}
+
+
+@media (min-width: 748px) {
+  .cardsSection {
+    margin: 3rem 1rem;
+    flex-direction: row;
+  
+  }
+
+  .servicesSection {
+    width: auto;
+  }
+  
+}
+
+
+@media (min-width: 1080px) {
+  .cardsSection {
+    margin: 3rem 0;
+  }
+  
 }
